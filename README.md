@@ -1,10 +1,10 @@
-# first_pr
+# RESTapi Django+Postgresql
 
-Данный сервис работает на стеке Django + Postgresql. 
-
-Для того чтобы запустить этот код, необходимо указать поднять сервер на Postgresql, указать имя сервера, IP-адрес. 
-Сделать это необходимо во вкладке DjangoAPI/settings.py:
-DATABASES = {
+1 Download project 
+2 Start new postgresql server or use exist 
+    copy server name, username, passwoed, ip address(host), port
+    and insert to page DjangoAPI/settings.py:
+    DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mytestdb', - указываем имя сервера
@@ -14,3 +14,6 @@ DATABASES = {
         'PORT': '5432' - номер порта 
     }
 }
+
+3 Then compile code 
+Now you can use GET, POST, DELETE, UPLOAD files on database 
